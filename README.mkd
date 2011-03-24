@@ -1,0 +1,34 @@
+# README
+
+Yukki is a git-based wiki written in Perl. You can find the best place to install that here:
+
+  * <http://search.cpan.org/dist/Yukki/>
+
+You can also find it on github here:
+
+  * <http://github.com/zostay/Yukki/>
+
+This project is for sharing online Help documentation for the wiki. You can include this documentation in your wiki by adding this to the `repositories` section of your `yukki.conf`, if it is not there already:
+
+    yukki: 
+        repository: yukki.git
+        site_branch: refs/heads/master
+
+        name: Help
+        default_page: home.yukki
+
+        anonymous_access_level: read
+        read_groups: ANY
+        write_groups: ANY
+
+Then, run:
+
+    yukki-git-init yukki git://githup.com/zostay/yukki-help.git
+
+When you look at your wiki (after a server restart if you had to change the configuration), you will see a **Help** link at the top of the page that will give you this documentation repository.
+
+Later, you may update the documentation by running this command:
+
+    git --git-dir repositories/yukki.git pull origin master
+
+(Sorry, there's no helper script for that... yet.)
