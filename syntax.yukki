@@ -4,6 +4,21 @@ This is a description of what you want to be typing inside of the edit box when 
 
 Much of this documentation is copied from those places.
 
+## Yukki Links and Attachments
+
+Other than standard Markdown, which is documented next, Yukki also supports links like this:
+
+    \[[ repository:/path/to/file.yukki | Link Label ]]
+
+The repository part and the label are optional:
+
+    \[[ /path/to/file.yukki ]]
+    \[[ /path/to/file.yukki | Link Label ]]
+
+After uploading an attachment, you can link to the attachment in a `<img/>` tag like this:
+
+    <img src="\{{attachment:Image.jpg}}"/>
+
 ## Markdown Syntax
 
 ### Inline HTML
