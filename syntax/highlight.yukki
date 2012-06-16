@@ -1,0 +1,175 @@
+# Syntax Highlighting
+
+When enabled, the syntax highlighting plugin may be used provide highlighting for software code in your wiki pages.
+
+## Configuration
+
+To enable the the `SyntaxHighlight` plugin in your `yukki.conf` like so:
+
+    plugins:
+        - module: SyntaxHighlight
+
+## Highlighting Your Code
+
+You may highlight your code using one of three directives. Along with the name of the directive, you must name the computer language you are highlighting.
+
+### highlight-div
+
+For blocks of code use the `highlight-div` directive. 
+
+For example:
+
+{{highlight-div:HTML:<p class="test">Hello World</p>}}
+
+is formatted in Yukki like this:
+
+    \{{highlight-div:HTML:<p class="test">Hello World</p>}}
+
+### highlight-span
+
+For inline blocks of code you may use the `hightlight-span` directive.
+
+For example, you could discuss your JavaScript, {{highlight-span:JavaScript:document.write("Hello World")}}, by using the syntax highlight plugin like this:
+
+    For example, you could discuss your JavaScript, 
+    \{{highlight-span:JavaScript:document.write("Hello World")}}, 
+    by using the syntax highlight plugin like this.
+
+## highlight
+
+Or for just simply embedding the highlighted code without the additional `SPAN` or `DIV` wrapper, you can just use `highlight`.
+
+So, to highlight some Perl code, {{highlight:Perl:use Acme::Fork::Bomb v2.0}}, you can do so inline like this:
+
+    So, to highlight some Perl code,
+    {{highlight:Perl:use Acme::Fork::Bomb v2.0}},
+    you can do so inline like this.
+
+## Supported Formats
+
+You may name any of the following formats when using this plugin (and possibly others in the future).
+
+* .desktop
+* 4GL
+* 4GL-PER            
+* ABC                
+* AHDL               
+* ANSI C89           
+* ASP                
+* AVR Assembler      
+* AWK                
+* Ada                                 
+* Ansys              
+* Apache Configuratio
+* Asm6502            
+* Bash               
+* BibTeX             
+* C                  
+* C#                 
+* C++                
+* CGiS               
+* CMake              
+* CSS                
+* CUE Sheet          
+* Cg                 
+* ChangeLog          
+* Cisco              
+* Clipper            
+* ColdFusion         
+* Common Lisp        
+* Component-Pascal   
+* D                  
+* Debian Changelog   
+* Debian Control     
+* Diff               
+* Doxygen            
+* E Language         
+* Eiffel             
+* Email              
+* Euphoria           
+* Fortran            
+* FreeBASIC          
+* GDL                
+* GLSL               
+* GNU Assembler      
+* GNU Gettext        
+* HTML               
+* Haskell            
+* IDL                
+* ILERPG             
+* INI Files          
+* Inform             
+* Intel x86 (NASM)   
+* JSP                
+* Java               
+* JavaScript         
+* Javadoc            
+* KBasic             
+* Kate File Template 
+* LDIF               
+* LPC                
+* LaTeX              
+* Lex/Flex           
+* LilyPond           
+* Literate Haskell   
+* Lua                
+* M3U                
+* MAB-DB             
+* MIPS Assembler     
+* Makefile           
+* Mason              
+* Matlab             
+* Modula-2           
+* Music Publisher    
+* Octave             
+* PHP (HTML)                         
+* POV-Ray            
+* Pascal             
+* Perl               
+* PicAsm             
+* Pike               
+* PostScript         
+* Prolog             
+* PureBasic          
+* Python             
+* Quake Script       
+* R Script           
+* REXX               
+* RPM Spec           
+* RSI IDL            
+* RenderMan RIB      
+* Ruby               
+* SGML               
+* SML                
+* SQL                
+* SQL (MySQL)        
+* SQL (PostgreSQL)   
+* Sather             
+* Scheme             
+* Sieve              
+* Spice              
+* Stata              
+* TI Basic           
+* TaskJuggler        
+* Tcl/Tk             
+* UnrealScript       
+* VHDL               
+* VRML               
+* Velocity           
+* Verilog            
+* WINE Config        
+* Wikimedia          
+* XML                
+* XML (Debug)        
+* Yacc/Bison         
+* de_DE              
+* en_EN              
+* ferite             
+* nl                 
+* progress           
+* scilab             
+* txt2tags           
+* x.org Configuration
+* xHarbour           
+* xslt               
+* yacas              
