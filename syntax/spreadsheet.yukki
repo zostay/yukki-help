@@ -59,4 +59,8 @@ like so:
 
 This example shows the repository as well as the full patch to the wiki page in the first variable and just the path in the second. If your page is in the same repository, you may omit the repository.
 
-Be careful with this operation, as it requires fetching the other page and performing all the calculations found there.
+Be careful with this operation, as it requires fetching the other pages referenced and performing all the calculations found there.
+
+## See Also
+
+More information about the functions provided and operations available are documented in the [Spreadsheet::Engine](https://metacpan.org/module/Spreadsheet::Engine) documentation.
