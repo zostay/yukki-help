@@ -46,3 +46,17 @@ The third part of the format is the calculation to perform. This can be any stan
 which looks like this:
 
 {{=:a:32}} + {{=:b:10}} = {{=:[a]+[b]}}
+
+## Cross References on Different Pages
+
+It is possible to refer to variables defined on a different page. This is done by naming the page inside the variable reference like so:
+
+    \{{=:c:SQRT([yukki:syntax/spreadsheet!a]^2 + [syntax/spreadsheet!b]^2)}}
+
+like so:
+
+{{=:c:SQRT([yukki:syntax/spreadsheet!a]^2 + [syntax/spreadsheet!b]^2)}}
+
+This example shows the repository as well as the full patch to the wiki page in the first variable and just the path in the second. If your page is in the same repository, you may omit the repository.
+
+Be careful with this operation, as it requires fetching the other page and performing all the calculations found there.
