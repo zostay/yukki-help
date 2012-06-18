@@ -1,0 +1,27 @@
+# Yukki Links and Attachments
+
+Other than standard Markdown, which is documented next, Yukki also supports links like this:
+
+    \[[ repository:/path/to/file.yukki | Link Label ]]
+
+The repository part and the label are optional:
+
+    \[[ /path/to/file.yukki ]]
+    \[[ /path/to/file.yukki | Link Label ]]
+
+If you omit the label, you can think of the link as the being the label. For example,
+
+    \[[ This is a Link ]]
+
+This will create a link to "This-is-a-Link.yukki" on the current page.
+
+Pages in Yukki are organized in a folders where a ".yukki" can be used as a customized index for a given folder. If you want to link to files under a certain page, you can use the dot-slash ("./") to do that:
+
+    \[[ ./Link to Subpage ]]
+    \[[ ./Link to Subpage/Subpage Under That ]]
+
+When slashes are used in links like this, only the last part will be put in the label.
+
+After uploading an attachment, you can link to the attachment in a `<img/>` tag like this:
+
+    <img src="\{{attachment:Image.jpg}}"/>

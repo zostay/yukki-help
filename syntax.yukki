@@ -1,0 +1,9 @@
+# Yukki Syntax
+
+This is a description of what you want to be typing inside of the edit box when editing a page. 
+
+ * [[ syntax/multimarkdown.yukki | Basic MultiMarkdown Syntax ]] - Yukki's syntax is based on MultiMarkdown, which is an extension of Markdown
+ * [[ syntax/links.yukki | Links and Attachments ]] - special extensions to Yukki for links and attachments
+ * [[ syntax/highlight.yukki | Syntax Highlighting ]] - the syntax highlighting plugin
+ * [[ syntax/spreadsheet.yukki | Spreadsheet Operations ]] - the spreadsheet plugin
+ * [[ syntax/viewer.yukki | Viewer Plugins ]] - the viewer plugin
