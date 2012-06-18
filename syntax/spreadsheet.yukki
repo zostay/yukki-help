@@ -1,0 +1,48 @@
+# Spreadsheet Plugin
+
+The spreadsheet plugin, when enabled, allows your wiki pages to perform calculations. Calculations may even be performed across wiki pages. This is somewhat experimental and it is likely that extensive spreadsheet calculations will lead to decreased performance.
+
+## Configuration
+
+To configure the spreadsheet plugin, you just need to add the plugin to those listed in the `plugins` key in the `yukki.conf` configuration:
+
+    plugins:
+        - module: Spreadsheet
+
+## Using Spreadsheet Variables
+
+Wherever you want to use a spreadsheet calculation, you just need to embed a short declaration like this:
+
+    \{{=:the_answer:42}}
+
+which looks like this in the page:
+
+{{=:the_answer:42}}
+
+The spreadsheet calculation always starts with "\{{=:" and always ends with "}}". The second part is the name of the variable. This can be any word you like so long as it is only made of letters, numbers, and underscores. For example,
+
+    the_answer
+    foo
+    a
+
+But not:
+
+    the answer
+    foo!
+    a-or-b
+
+This second part is actually optional and may be omitted. Make sure you leave out the colon between the second and third parts as well:
+
+    \{{=:32+10}}
+
+like this:
+
+{{=:32+10}}
+
+The third part of the format is the calculation to perform. This can be any standard spreadsheet calculation function or operation. For example,
+
+    \{{=:a:32}} + \{{=:b:10}} = \{{=:[a]+[b]}}
+
+which looks like this:
+
+{{=:a:32}} + {{=:b:10}} = {{=:[a]+[b]}}
